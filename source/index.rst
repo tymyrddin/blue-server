@@ -113,6 +113,6 @@ A work in progress ...
    docs/trouble/*
 
 .. toctree::
-   :caption: All mitigations
+   :caption: Links
 
-   Overview <https://tymyrddin.github.io/mitigations/>
+   All mitigations <https://tymyrddin.github.io/mitigations/>
