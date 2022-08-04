@@ -5,8 +5,8 @@ Linux server mitigations
   :alt: Overview
 
 Version 0.1: Notes on setting up a base linux server for building a secure infrastructure with separated servers.
-The below configurations were for a debian 9, and need to be updated, and an authentication server and DNS server added.
-A work in progress ...
+The below configurations were for a debian 9, and need to be updated, an authentication server and DNS server added,
+and a Maltrail firewall implemented on the Bastion jumpserver. A work in progress ...
 
 .. toctree::
    :glob:
