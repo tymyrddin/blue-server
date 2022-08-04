@@ -1,10 +1,9 @@
-# HIDS
+# Introduction
 
 A host-based intrusion detection system (HIDS) is a system that monitors a system on which it is installed to detect an intrusion and/or misuse, and responds by logging the activity and notifying the system administrators.
 
-* [Snort](Snort.md)
-* [Samhain](Samhain.md)
-* [Maltrail](Maltrail.md)
+* [Samhain](samhain.md)
+* [Maltrail](maltrail.md)
 
 ## Notes
 

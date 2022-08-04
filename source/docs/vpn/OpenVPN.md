@@ -14,7 +14,7 @@ The sample server configuration file that comes with OpenVPN is a good starting 
 
 * The server will start as root, but for security, can be set to drop to lower privileges after startup, by removing the semicolons (uncommenting) the `user nobody` and `group nogroup` directives.
 * Also uncomment out the `client-to-client` directive if you want clients to not only be able to reach the server over VPN (the default), but also each other. 
-* Set the `ca`, `cert`, `key`, and `dh` parameters in the config file to point to the files generated in the [PKI setup](../pki/Internal-PKI.md).
+* Set the `ca`, `cert`, `key`, and `dh` parameters in the config file to point to the files generated in the [PKI setup](../pki/internal-pki.md).
 * If you have set the DH key size to 2048 instead of the default 1024, change `dh dh1024.pem` accordingly.
 * For assigning the different clients static IP addresses from the OpenVPN server, uncomment `client-config-dir ccd`
 * Enabling compression is not recommended; it opens the server up to the VORACLE attack vector.

@@ -1,6 +1,6 @@
 # TigerVNC
 
-TigerVNC is not as lightweight as [TightVNC](TightVNC.md), but it provides extensions for advanced authentication methods and [TLS encryption](Securing-sessions.md), hence a proper candidate for a fallback when ssh fails. 
+TigerVNC is not as lightweight as [TightVNC](TightVNC.md), but it provides extensions for advanced authentication methods and [TLS encryption](secure-sessions.md), hence a proper candidate for a fallback when ssh fails. 
 
 ## Installation
 

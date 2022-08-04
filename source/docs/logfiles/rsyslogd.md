@@ -21,6 +21,7 @@ The rsyslogd service is a system utility providing support for message logging. 
   * Rule: Only listen for this IP address on this port (of syslog server)
 
 ## Server
+
 ### Installation 
     
     # apt install rsyslog
@@ -63,7 +64,7 @@ OR for example, for allowing all hosts (but not applications) in a subnet XXX.XX
 
     $template RemoteStore, "/var/log/remote/%HOSTNAME%/%timegenerated:1:10:date-rfc3339%"
     :source, !isequal, "localhost" -?RemoteStore
-:   source, isequal, "last" ~
+    :source, isequal, "last" ~
 
 Write and quit. Restart `rsyslog` daemon:
 
