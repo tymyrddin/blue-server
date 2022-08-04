@@ -5,6 +5,6 @@ and secure. Other applications can be configured to pass their traffic over the 
 exposes. This way, only services that are meant to be used by clients on the public internet need to be exposed on 
 the public network.
 
-* [OpenVPN](OpenVPN.md)
-* [strongSwan](strongSwan.md)
+* [OpenVPN](openvpn.md)
+* [strongSwan](strongswan.md)
 

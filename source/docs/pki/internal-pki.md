@@ -5,11 +5,11 @@ An Internal PKI consists of
 * A master-your-own master Certificate Authority (CA) certificate and key which is used to sign each of the server and client certificates.
 * A separate certificate (also known as a public key) and private key for the server and each client.
 
-The most secure way of doing this is have the Certificate Authority keys generated on a stand-alone (not Internet-connected) machine in a secure location. 
+The most secure way of doing this is to generate the Certificate Authority keys on a stand-alone (not Internet-connected) machine in a secure location. 
 
 ## Master Certificate Authority (CA)
 
-[easy-rsa](https://github.com/OpenVPN/easy-rsa) is a CLI utility to build and manage a PKI CA. It has a [quickstart documentation](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md) and [openvpn] has example files.
+[easy-rsa](https://github.com/OpenVPN/easy-rsa) is a CLI utility to build and manage a PKI CA. It has a [quickstart documentation](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md) and OpenVPN has example files.
 
     cd /etc/openvpn/
     mkdir easy-rsa
