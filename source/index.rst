@@ -13,6 +13,15 @@ jumpserver. A work in progress ...
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: Hardening
+
+   docs/hardening/README.md
+   docs/hardening/services.md
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: SSH
 
    docs/ssh/README.md
