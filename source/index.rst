@@ -4,7 +4,7 @@ Linux server mitigations
 .. image:: _static/images/infra.png
   :alt: Overview
 
-Version 0.1: Notes on setting up a base linux server for building a secure infrastructure with separated servers.
+Version 0.1: Notes on setting up a base linux server for building a more secure infrastructure with separated servers.
 The below configuration collection was made on debian 9 hosts, and need to be updated to 11, server configurations for
 an authentication server, log server, and DNS server added, and a Maltrail firewall implemented on the Bastion
 jumpserver. A work in progress ...
