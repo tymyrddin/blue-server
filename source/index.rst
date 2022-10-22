@@ -1,4 +1,4 @@
-Linux server mitigations
+Hardening Linux server
 ====================================================
 
 .. image:: _static/images/infra.png
@@ -13,10 +13,10 @@ jumpserver. A work in progress ...
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Hardening
+   :caption: Services
 
-   docs/hardening/README.md
-   docs/hardening/services.md
+   docs/services/README.md
+   docs/services/services.md
 
 .. toctree::
    :glob:
@@ -71,6 +71,7 @@ jumpserver. A work in progress ...
 
    docs/logfiles/README.md
    docs/logfiles/rsyslogd.md
+   docs/logfiles/log-commands
    docs/logfiles/intruder-path.md
    docs/logfiles/rotate.md
    docs/logfiles/centralised.md
@@ -124,4 +125,4 @@ jumpserver. A work in progress ...
 .. toctree::
    :caption: Links
 
-   All mitigations <https://tymyrddin.github.io/mitigations/>
+   Blue Team <https://tymyrddin.github.io/blue/>

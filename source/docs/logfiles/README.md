@@ -1,6 +1,7 @@
 # Introduction
 
 * [rsyslogd](rsyslogd.md)
+* [Log commands](log-commands.md)
 * [Path of a common intruder](intruder-path.md)
 * [Logrotate](rotate.md)
 * [Centralised logging](centralised.md)
@@ -16,8 +17,4 @@
 * When setting up a machine to act as log server, harden it and only use it to collect logs from other machines on your network. It should not be running anything else.
 * Log what is needed to [track the path of a common intruder](intruder-path.md).
 * If and when it is all running well, consider setting up for intrusion detection and log correlation.
-
-## Cheatsheets
-
-* [Log commands](cheatsheets:docs/linux/log-commands)
 
