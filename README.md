@@ -1,7 +1,7 @@
 # Linux server mitigations
 
-![Publish Linux server mitigations using Sphinx](https://github.com/tymyrddin/linux-server-mitigations/workflows/Publish%20Linux%20server%20mitigations%20using%20Sphinx/badge.svg?branch=main)
- Deployed: https://tymyrddin.github.io/linux-server-mitigations/
+![Publish Linux server mitigations using Sphinx](https://github.com/tymyrddin/blue-server/workflows/Publish%20Linux%20server%20mitigations%20using%20Sphinx/badge.svg?branch=main)
+ Deployed: https://tymyrddin.github.io/blue-server/
 
 Built with [Sphinx](https://www.sphinx-doc.org) using a [theme](https://github.com/readthedocs/sphinx_rtd_theme) provided
 by [Read the Docs](https://readthedocs.org/).
@@ -26,7 +26,8 @@ $ make html
 
 This project welcomes contributions and suggestions. 
 
-[Open an issue here](https://github.com/tymyrddin/linux-server-mitigations/issues)
+[Open an issue here](https://github.com/tymyrddin/blue-server/issues)
 
 ## Mind
-Where you stand depends on where you sit, and all threats are cross-vector threats. Without a clear mandate for testing, measuring and reporting actual improvements in security, attempts at improving security makes absolutely no sense, not even for the low-hanging fruit.  
+
+Something small and distant broke through the cloud layer, trailing shreds of vapour. In the stratospheric calm the sounds of bickering came sharp and clear. "You said you could fly one of these things!" "No I didn't; I just said you couldn't!" ~ Rincewind and Twoflower attempt broomstick flying (Terry Pratchett, The Light Fantastic)
