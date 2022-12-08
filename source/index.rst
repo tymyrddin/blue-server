@@ -125,4 +125,4 @@ jumpserver. A work in progress ...
 .. toctree::
    :caption: Links
 
-   Blue Team <https://tymyrddin.github.io/blue/>
+   Blue Team <https://blue.tymyrddin.dev/>
