@@ -6,9 +6,9 @@ Hardening Linux server
 
 ----
 
-The below writeups were initially based on debian 9 hosts, and then later on ubuntu 18.04 LTS. Everything that applies
-to those two will probably also apply to newer versions and other distributions. More or less. If something does not work, check the documentation
-for that distro and/or version for what you are trying to do.
+The below writeups were initially based on debian 9 hosts, and then later on ubuntu 18.04 LTS, and CentOS. Everything
+that applies to those will probably also apply to newer versions. More or less. If something does not work, check
+the documentation for that distro version and/or version for what you are trying to do.
 
 ----
 
@@ -30,10 +30,12 @@ for that distro and/or version for what you are trying to do.
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Services
+   :caption: Audit services
 
    docs/services/README.md
-   docs/services/services.md
+   docs/services/systemctl.md
+   docs/services/netstat.md
+   docs/services/nmap.md
 
 .. toctree::
    :glob:

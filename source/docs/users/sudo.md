@@ -32,7 +32,7 @@ Users can also be added to the `sudoers` using the `sudo` policy file. **Always 
 
 If you are managing users in a network across multiple flavours of Linux (CentOS, Red Hat, etc.), where the sudo group may be called something different, this method may be more preferable: add a `User Alias` to the policy file and add users to that alias, or add lines for individual users.
 
-    User_Alias ADMINS = jsmith, mikem
+    User_Alias ADMINS = lela, barzh
 
 and:
 
@@ -40,7 +40,7 @@ and:
 
 or for an individual user: 
 
-    frank ALL=(ALL) ALL
+    username ALL=(ALL) ALL
 
 It is not recommended to use individual user aliases in a large network since this can become unwieldy very quickly. The first option is going to be your best bet as you can simply add users to this alias and control which commands they have access to with `sudo` easily.
 
@@ -56,10 +56,50 @@ To assign the `SOFTWARE` command alias to the `SOFTWAREADMINS` user alias:
 
 You can also assign Command Aliases to individual users, specific commands to individual users, and Command Aliases to groups.
 
-## Host Aliases
+## Host aliases
 
 `Host Aliases` are a way to trickle down a sudo policy across the network and different servers. For example, you may have a `MAILSERVERS` `Host Alias` which contains servers `mail1` and `mail2`. This `Host Alias` has certain users or groups assigned to it, and that `Host Alias` has a `Command Alias` assigned to it stating which commands those users are able to run.
 
 When those users run a command on `mail1` or `mail2`, the server will check the sudo policy file to see if they can do what they are trying to do.
 
 In a home environment and small-medium business environments, it probably is just easier to copy the sudo policy file to each server in the network. This will really only come into play with large enterprise networks and even then they will probably be using a centralised Ansible or other automation in effect.
+
+## Preventing users from using shell escapes
+
+Programs like text editors and pagers have a handy shell escape feature. This allows a user to run a shell command without having to exit the program first. For example, from the command mode of the `vi` and `vim` editors, someone could run the `ls` command by running `:!ls`.
+
+To allow a user to edit the `sshd_config` file and only that file, add a line to the sudo configuration:
+
+    username ALL=(ALL) sudoedit /etc/ssh/sshd_config
+
+`sudoedit` has no shell escape feature.
+
+Other programs that have a shell escape feature: `emacs`, `less`, `view`, and `more`.
+
+## Preventing users from using other dangerous programs
+
+Some programs that don't have shell escapes can still be dangerous if you give users unrestricted privileges to use them, like `cat`, `cut`, `awk`, and `sed`.
+
+If you must give someone `sudo` privileges to use one of these programs, limit their use to only specific files.
+
+## Preventing abuse via user's shell scripts
+
+A rule for Fritz so he can create scripts running with elevated privileges:
+
+    fritz ALL=(ALL) /home/fritz/fritz_script.sh
+
+And his cript reads:
+
+    #!/bin/bash
+    echo "This script belongs to Fritz the Cat."
+    sudo -i
+
+What can happen next:
+
+    fritz@server:~$ sudo ./fritz_script.sh
+    This script belongs to Fritz the Cat.
+    root@server:~#
+
+`sudo -i` logs a person in to the root user's shell, the same way that `sudo su -` does.
+
+To remedy this, move Fritz' script to the `/usr/local/sbin` directory and change the ownership to the `root` user so that Fritz will not be able to edit it. And delete that `sudo -i` line in it.

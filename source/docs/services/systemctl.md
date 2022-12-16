@@ -1,20 +1,21 @@
-# Restrict services
+# Auditing system services with systemctl
 
-Run only what you need. 
+On Linux systems that come with `systemd`, the `systemctl` command is pretty much a universal command.
 
-## Check
+To view the status of services:
 
-What kind of services are running on the system:
+    sudo systemctl -t service --state=active
 
-    # ps ax
+With:
 
-Processes accepting connection (ports):
+* `-t service`: We want to view information about the services – or, what used to be called daemons – on the system.
+* `--state=active`: This specifies that we want to view information about all the system services that are actually running.
 
-    # netstat -lp
+This command shows the status of every service that's running on your system. Generally, you do not want to see much information, although you might at times.
 
-## Typical candidates for removal
+## Candidates for removal
 
-Most likely candidates for removal:
+Depending on what the server is for:
 
 * `smbd` and `nmbd` indicates a Samba Process. Do you really need to export smb share on windows or other machine?
 * `telnet` for bidirectional interactive text-oriented communication over internet or local area network? 
