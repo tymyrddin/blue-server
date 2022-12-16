@@ -4,10 +4,27 @@ Hardening Linux server
 .. image:: _static/images/infra.png
   :alt: Overview
 
-Version 0.1: Notes on setting up a base linux server for building a more secure infrastructure with separated servers.
-The below configuration collection was made on debian 9 hosts, and need to be updated to 11, server configurations for
-an authentication server, log server, and DNS server added, and a Maltrail firewall implemented on the Bastion
-jumpserver. A work in progress ...
+----
+
+The below writeups were initially based on debian 9 hosts, and then later on ubuntu 18.04 LTS. Everything that applies
+to those two will probably also apply to newer versions and other distributions. More or less. If something does not work, check the documentation
+for that distro and/or version for what you are trying to do.
+
+----
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
+   :caption: Securing user accounts
+
+   docs/users/README.md
+   docs/users/sudo.md
+   docs/users/disable-root.md
+   docs/users/homes.md
+   docs/users/passwords.md
+   docs/users/other-reqs.md
+   docs/users/lxd.md
 
 .. toctree::
    :glob:
@@ -126,3 +143,12 @@ jumpserver. A work in progress ...
    :caption: Links
 
    Blue Team <https://blue.tymyrddin.dev/>
+
+----
+
+.. image:: _static/images/linux-hardening-book.png
+  :alt: Useful books
+
+Wishlist: server configurations for a separate authentication server, log server, and DNS server, and a
+Maltrail firewall implemented on the Bastion jumpserver.
+
