@@ -63,7 +63,6 @@ the documentation for your distro and version for what you are trying to do.
 
    docs/encryption/README.md
    docs/encryption/gnupg.md
-   docs/encryption/files.md
    docs/encryption/openvpn.md
    docs/encryption/strongswan.md
    docs/encryption/ssh.md
@@ -123,7 +122,7 @@ the documentation for your distro and version for what you are trying to do.
    :glob:
    :maxdepth: 1
    :includehidden:
-   :caption: Disasters
+   :caption: Incidents
 
    docs/disasters/README.md
    docs/disasters/prevention.md

@@ -2,11 +2,12 @@
 
 ## What?
 
-Maintain (and test) backups.
+Configuring access control
 
 ## Why?
 
-Be able to recover after an incident.
+* Protecting sensitive files and directories by setting proper permissions and ownership, and by using Extended Attributes (xattr). 
+* Avoiding security related problems with Set User ID (SUID) and Set Group ID (SGID).
 
 ## How?
 

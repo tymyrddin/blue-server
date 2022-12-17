@@ -13,7 +13,6 @@ Protect data at rest and data in transit.
 ## How?
 
 * [GNU Privacy Guard](gnupg.md)
-* [Encrypting files](files.md)
 * [OpenVPN](openvpn.md)
 * [strongSwan](strongswan.md)
 * [Installing SSH](ssh.md)
