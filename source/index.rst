@@ -122,6 +122,16 @@ the documentation for your distro and version for what you are trying to do.
    :glob:
    :maxdepth: 1
    :includehidden:
+   :caption: Guards! Guards!
+
+   docs/ids/README.md
+   docs/ids/samhain.md
+   docs/ids/*
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+   :includehidden:
    :caption: Incidents
 
    docs/incidents/README.md
@@ -129,16 +139,6 @@ the documentation for your distro and version for what you are trying to do.
    docs/incidents/git.md
    docs/incidents/backup.md
    docs/incidents/brm.md
-
-.. toctree::
-   :glob:
-   :maxdepth: 1
-   :includehidden:
-   :caption: Guards! Guards!
-
-   docs/ids/README.md
-   docs/ids/samhain.md
-   docs/ids/*
 
 .. toctree::
    :glob:
@@ -156,7 +156,7 @@ the documentation for your distro and version for what you are trying to do.
 
 ----
 
-.. image:: _static/images/linux-hardening-book.png
+.. image:: _static/images/server-books.png
   :alt: Useful books
 
 Wishlist: server configurations for a separate authentication server, log server, and DNS server, and a

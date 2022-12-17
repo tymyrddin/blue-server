@@ -20,6 +20,8 @@ We always do our best to design the most stable and fault-tolerant server implem
 * Do not store backups or old versions of software on the production system.
 * Automate making backups. 
 
+----
+
 | ![Ubuntu Server](../../_static/images/ubuntu-server-book.png) |
 |:--:|
 | [Mastering Ubuntu Server, Jay LaCroix, Fourth Edition](https://www.packtpub.com/product/mastering-ubuntu-server-fourth-edition/9781803234243) |

@@ -2,6 +2,8 @@
 |:--:|
 | [THM Room: Hardening basics](https://tryhackme.com/room/hardeningbasicspart1) |
 
+----
+
 # Introduction
 
 ## What?
