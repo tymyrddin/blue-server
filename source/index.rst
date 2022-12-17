@@ -124,11 +124,11 @@ the documentation for your distro and version for what you are trying to do.
    :includehidden:
    :caption: Incidents
 
-   docs/disasters/README.md
-   docs/disasters/prevention.md
-   docs/disasters/git.md
-   docs/disasters/backup.md
-   docs/disasters/brm.md
+   docs/incidents/README.md
+   docs/incidents/prevention.md
+   docs/incidents/git.md
+   docs/incidents/backup.md
+   docs/incidents/brm.md
 
 .. toctree::
    :glob:

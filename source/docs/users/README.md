@@ -1,3 +1,7 @@
+| ![Hardening Basics](../../_static/images/default_tryhackme-room-banner.png) |
+|:--:|
+| [THM Room: Hardening basics](https://tryhackme.com/room/hardeningbasicspart1) |
+
 # Introduction
 
 ## What?
