@@ -1,0 +1,1 @@
+# Using git for configuration management

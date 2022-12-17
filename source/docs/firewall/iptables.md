@@ -1,26 +1,25 @@
-# IPTables
+# iptables
 
-IPTables is a command line utility for configuring the Linux kernel firewall implemented within the Netfilter project. It is the de facto Linux firewall. And it gets complex rather quickly which increases the risk of making mistakes. 
+`iptables` is **not** the name of Linux's firewall. It is just one way of interacting with `netfilter` which every Linux distribution comes with.
 
-For a bare metal server running only a dedicated application, such as a Schleuder list, iptables is the simplest (and minimalistic) choice. 
+As such, `iptables` is a command line utility for configuring the Linux kernel firewall implemented within the Netfilter project. And it gets complex rather quickly which increases the risk of making mistakes. 
 
-## Disable FirewallD
+* For a bare metal server running only a dedicated application, such as a Schleuder list, `iptables` is the simplest (and minimalistic) choice. 
+* For Ubuntu, it comes with the Uncomplicated Firewall (`ufw`), which is an easy-to-use frontend for iptables.
+* As of CentOS version 7, [FirewallD](firewalld.md) replaces `iptables` as default.
 
-Note: As of CentOS version 7, [FirewallD](firewalld.md) replaces IPTables as the default firewall management tool.
+## The four components of iptables
 
-Stop the FirewallD service
+`iptables` has 4 different components to it that all come together to give the utility its overall functionality:
 
-    # systemctl stop firewalld
-
-Disable it to start automatically on system boot
-
-    # systemctl disable firewalld
-
-Mask it to prevent it from being started by other services
-
-    # systemctl mask --now firewalld
+* Filter table - offers the basic protection that you'd expect a firewall to provide
+* Network Address Translation table - connects the public interwebs to the private networks
+* Mangle table - for mangling them packets as they go through the firewall
+* Security table - only used by SELinux
 
 ## Install and enable IPTables
+
+In case it is not installed and you wish to install it:
 
     # yum install iptables-services
 
@@ -39,11 +38,17 @@ Check iptables service status
     # systemctl status iptables
     # systemctl status iptables6
 
+## Chains
+
+* `INPUT` - packets coming into the firewall
+* `FORWARD` - packets routed to another NIC on the network; for packets on the local network that are being forwarded on.
+* `OUTPUT` - packets going out of the firewall
+
 ## Rules 
 
 ### Status command
 
-To list rules -L showing interface name, rule options, TOS masks, packet and byte counters -n, and IP address and port in numeric format without using DNS to resolve names -v:
+To list rules `-L` showing interface name, rule options, TOS masks, packet and byte counters `-n`, and IP address and port in numeric format without using DNS to resolve names `-v`:
     
     # iptables -L -n -v
 

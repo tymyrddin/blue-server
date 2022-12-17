@@ -1,13 +1,19 @@
 # Introduction
 
-Establishing a certificate authority (CA) and managing certificates for the servers allows each entity within the 
-infrastructure to validate the other members’ identities and encrypt their traffic. This can prevent MitM 
-attacks where an attacker imitates a server in the infrastructure to intercept traffic.
+## What?
 
 Public key infrastructure (PKI) is the umbrella term for everything needed in order to issue, distribute, store, use, 
 verify, revoke, and otherwise manage and interact with certificates and keys. It’s an intentionally vague term, like 
 “database infrastructure”. Certificates are the building blocks of most PKIs, and certificate authorities are the 
 foundation.
+
+## Why?
+
+Establishing a certificate authority (CA) and managing certificates for the servers allows each entity within the 
+infrastructure to validate the other members’ identities and encrypt their traffic. This can prevent MitM 
+attacks where an attacker imitates a server in the infrastructure to intercept traffic.
+
+## How?
 
   * [Problems](problems.md)
   * [Internal PKI](internal-pki.md)

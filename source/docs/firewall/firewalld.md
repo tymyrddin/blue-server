@@ -106,4 +106,16 @@ Make changes permanent:
 
     # firewall-cmd --permanent --add-service=smtp success
 
+## Disable FirewallD
 
+Stop the FirewallD service
+
+    # systemctl stop firewalld
+
+Disable it to start automatically on system boot
+
+    # systemctl disable firewalld
+
+Mask it to prevent it from being started by other services
+
+    # systemctl mask --now firewalld

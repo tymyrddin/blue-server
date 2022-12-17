@@ -1,5 +1,15 @@
 # Introduction
 
+## What?
+
+Server logs contain information that cannot be found anywhere else. For example, server errors and user access records. 
+
+## Why?
+
+Having the ability to review these logs gives the ability to determine what caused an issue on the server.
+
+## How?
+
 * [rsyslogd](rsyslogd.md)
 * [Log commands](log-commands.md)
 * [Path of a common intruder](intruder-path.md)

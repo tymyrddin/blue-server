@@ -21,7 +21,7 @@ By default, the SSH client verifies the identity of the host to which it connect
 
 Besides a MitM attack (Make sure this is not the case from a trusted source. An adversary may be spoofing the host and continuing may give the adversary the information they seek to attack your server), this can also happen
 
-* after [changing a key](../ssh/key-management.md): edit `~/.ssh/known_hosts` file and remove the offending line. In the above example that is line 10.
+* after [changing a key](../encryption/key-management.md): edit `~/.ssh/known_hosts` file and remove the offending line. In the above example that is line 10.
 * when using ssh on a LAN (where DHCP is used and IP addresses change) 
 * when jumping to multiple hosts from a jump host. 
 

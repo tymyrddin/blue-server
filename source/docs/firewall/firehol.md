@@ -12,7 +12,7 @@ On the backend server, install FireHOL for configuring [iptables](iptables.md).
 
     # vi /etc/firehol/firehol.conf
 
-A configuration which only allows incoming [ssh](../ssh/README.md) connections and openvpn:
+A configuration which only allows incoming [ssh](../encryption/ssh.md) connections and openvpn:
 
     interface eth0 inet
     client all accept                           // allow all outgoing connections
