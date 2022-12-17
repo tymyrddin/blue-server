@@ -88,7 +88,7 @@ A rule for Fritz so he can create scripts running with elevated privileges:
 
     fritz ALL=(ALL) /home/fritz/fritz_script.sh
 
-And his cript reads:
+And his script reads:
 
     #!/bin/bash
     echo "This script belongs to Fritz the Cat."
