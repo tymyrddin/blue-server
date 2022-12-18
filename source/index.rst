@@ -159,6 +159,3 @@ the documentation for your distro and version for what you are trying to do.
 .. image:: _static/images/server-books.png
   :alt: Useful books
 
-Wishlist: server configurations for a separate authentication server, log server, and DNS server, and a
-Maltrail firewall implemented on the Bastion jumpserver.
-
