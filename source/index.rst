@@ -149,11 +149,6 @@ the documentation for your distro and version for what you are trying to do.
    docs/trouble/README.md
    docs/trouble/*
 
-.. toctree::
-   :caption: Links
-
-   Blue Team <https://blue.tymyrddin.dev/>
-
 ----
 
 .. image:: _static/images/server-books.png
